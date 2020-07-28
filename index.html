@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<!--  this is for adding lottie -->
+
+	<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+</head>
+<body>
+<p> this is a simple test animation clock that simply loops</p>
+
+<lottie-player id="bmm" src="https://gist.githubusercontent.com/Jerichothomason/0ecf67d6e6da0b68ff72a19d388f48d4/raw/39e67b041bf3aacf8edff43c2e470d8d5fbee4db/data2.json" background="rgb(3, 252, 115)"    style="width: 400px; height: 400px;"  autoplay loop setDirection="-1"></lottie-player>
+
+<p> this is a simple test animation clock that scrolls</p>
+<p> putting random lines to enable scrolling</p>
+<p> hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+
+    hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+    hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+
+     hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+	    </p>
+
+
+	    <p> SCROLLING ANIMATION</p>
+	    <p> SCROLLING ANIMATION</p>
+	    <p> SCROLLING ANIMATION</p>
+
+<lottie-player id="bmmscroll" src="https://gist.githubusercontent.com/Jerichothomason/0ecf67d6e6da0b68ff72a19d388f48d4/raw/39e67b041bf3aacf8edff43c2e470d8d5fbee4db/data2.json" background="rgb(247, 242, 77)"    style="width: 400px; height: 400px;"></lottie-player>
+
+<p>  hey i am BATMAN <br>
+	 hey i am BATMAN <br>
+	  hey i am BATMAN <br>
+	   hey i am BATMAN <br>
+	    hey i am BATMAN <br>
+	     hey i am BATMAN <br>
+	      hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+	       hey i am BATMAN <br>
+	        hey i am BATMAN <br>
+	    </p>
+	    <br><br><br><br>
+
+<p>  this one moves when u move the cursor on it diagonally</p>
+<p> this is not a hover effect but a cursor movement effect</p>
+<lottie-player id="bmmdiag" src="https://gist.githubusercontent.com/Jerichothomason/0ecf67d6e6da0b68ff72a19d388f48d4/raw/39e67b041bf3aacf8edff43c2e470d8d5fbee4db/data2.json" background="rgb(77, 148, 247)"    style="width: 400px; height: 400px;"></lottie-player>
+</body>
+
+<script type="text/javascript">
+	
+
+LottieInteractivity.create({
+  player: '#bmmscroll',
+  mode: 'scroll',
+  actions: [
+    {
+      visibility: [0,1],
+      type: 'seek',
+      frames: [0, 100],
+
+    },
+    // {
+    //   position: { x: -1, y: -1 },
+    //   type: 'stop',
+    //   frames: [0],
+    // },
+  ],
+});
+
+LottieInteractivity.create({
+  player: '#bmmdiag',
+  mode: 'cursor',
+  actions: [
+     {
+      position: { x: [0, 1], y: [0, 1] },
+      type: "seek",
+      frames: [0, 179]
+    },
+    {
+      position: { x: -1, y: -1 },
+      type: 'stop',
+      frames: [45],
+    }    // {
+    //   position: { x: -1, y: -1 },
+    //   type: 'stop',
+    //   frames: [0],
+    // },
+  ],
+});
+</script>
+
+
+
+</html>
